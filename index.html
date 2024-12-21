@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Bot Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #5865f2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #404eed;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .module {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .module h2 {
+            color: #404eed;
+        }
+        .module h3 {
+            color: #5865f2;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        footer {
+            background-color: #404eed;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prime Bot Documentation</h1>
+        <p>Your ultimate guide to using Prime Bot's features.</p>
+    </header>
+    <nav>
+        <a href="#esports">Esports</a>
+        <a href="#greeting">Greeting System</a>
+        <a href="#media">Media Management</a>
+        <a href="#screenshot">Screenshot Verification</a>
+        <a href="#ticket">Ticket System</a>
+    </nav>
+    <div class="container">
+        <!-- Esports Section -->
+        <section id="esports" class="module">
+            <h2>Esports</h2>
+            <p>Prime Bot includes powerful features for managing tags and organizing content. Below are the available commands for TagCheck and EasyTag systems:</p>
+            <h3>TagCheck Commands</h3>
+            <ul>
+                <li><strong>Add a Channel to TagCheck:</strong> <code>?tagcheck channel add &lt;#channel&gt;</code></li>
+                <li><strong>Remove a TagCheck Channel:</strong> <code>?tagcheck channel remove &lt;#channel&gt;</code></li>
+                <li><strong>Show all TagCheck Channels:</strong> <code>?tagcheck channel show</code></li>
+                <li><strong>Add User to Bypass:</strong> <code>?tagcheck bypass add &lt;@user&gt;</code></li>
+                <li><strong>Remove User from Bypass:</strong> <code>?tagcheck bypass remove &lt;@user&gt;</code></li>
+                <li><strong>Show All Bypass Users:</strong> <code>?tagcheck bypass show</code></li>
+            </ul>
+            <h3>EasyTag Commands</h3>
+            <ul>
+                <li><strong>Add a Channel to EasyTag:</strong> <code>?easytag channel add &lt;#channel&gt;</code></li>
+                <li><strong>Remove an EasyTag Channel:</strong> <code>?easytag channel remove &lt;#channel&gt;</code></li>
+                <li><strong>Show all EasyTag Channels:</strong> <code>?easytag channel show</code></li>
+                <li><strong>Add User to Bypass:</strong> <code>?easytag bypass add &lt;@user&gt;</code></li>
+                <li><strong>Remove User from Bypass:</strong> <code>?easytag bypass remove &lt;@user&gt;</code></li>
+                <li><strong>Show All Bypass Users:</strong> <code>?easytag bypass show</code></li>
+            </ul>
+        </section>
+
+        <!-- Greeting System Section -->
+        <section id="greeting" class="module">
+            <h2>Greeting System</h2>
+            <p>Prime Bot's Greeting System allows you to welcome new members to your server with personalized messages.</p>
+            <ul>
+                <li><strong>Add a Greeting Channel:</strong> <code>?greet add &lt;#channel&gt;</code></li>
+                <li><strong>Remove a Greeting Channel:</strong> <code>?greet remove &lt;#channel&gt;</code></li>
+                <li><strong>List all Greeting Channels:</strong> <code>?greet show</code></li>
+                <li><strong>Toggle AutoDelete:</strong> <code>?greet autodel &lt;#channel&gt;</code></li>
+                <li><strong>Test Greeting:</strong> <code>?greet test &lt;#channel&gt;</code></li>
+            </ul>
+        </section>
+
+        <!-- Media Management Section -->
+        <section id="media" class="module">
+            <h2>Media Management</h2>
+            <p>Organize media sharing with Prime Bot's Media Management system.</p>
+            <ul>
+                <li><strong>Add a Media Channel:</strong> <code>?media channel add &lt;#channel&gt;</code></li>
+                <li><strong>Remove a Media Channel:</strong> <code>?media channel remove &lt;#channel&gt;</code></li>
+                <li><strong>Show all Media Channels:</strong> <code>?media channel show</code></li>
+                <li><strong>Add User to Bypass:</strong> <code>?media bypass add &lt;@user&gt;</code></li>
+                <li><strong>Remove User from Bypass:</strong> <code>?media bypass remove &lt;@user&gt;</code></li>
+                <li><strong>Reset Bypass Users:</strong> <code>?media bypass reset</code></li>
+                <li><strong>Show All Bypass Users:</strong> <code>?media bypass show</code></li>
+            </ul>
+        </section>
+
+        <!-- Screenshot Verification Section -->
+        <section id="screenshot" class="module">
+            <h2>Screenshot Verification</h2>
+            <p>Verify user-submitted screenshots with this feature.</p>
+            <ul>
+                <li><strong>Add a Verification Channel:</strong> <code>?ssverify channel add &lt;#channel&gt;</code></li>
+                <li><strong>Remove a Verification Channel:</strong> <code>?ssverify channel remove &lt;#channel&gt;</code></li>
+                <li><strong>Show all Verification Channels:</strong> <code>?ssverify channel show</code></li>
+            </ul>
+        </section>
+
+        <!-- Ticket System Section -->
+        <section id="ticket" class="module">
+            <h2>Ticket System</h2>
+            <p>Manage support requests efficiently with Prime Bot's Ticket System.</p>
+            <ul>
+                <li><strong>Create a Ticket Panel:</strong> <code>?ticket panel &lt;panel_name&gt;</code></li>
+                <li><strong>List all Ticket Panels:</strong> <code>?ticket list</code></li>
+                <li><strong>Delete a Ticket Panel:</strong> <code>?ticket paneldelete &lt;panel_name&gt;</code></li>
+                <li><strong>Reset Ticket Panels:</strong> <code>?ticket panelreset</code></li>
+                <li><strong>Add User to Ticket:</strong> <code>?ticket add &lt;user&gt;</code></li>
+                <li><strong>Remove User from Ticket:</strong> <code>?ticket remove &lt;user&gt;</code></li>
+                <li><strong>Reopen Ticket:</strong> <code>?ticket reopen</code></li>
+                <li><strong>Delete Ticket:</strong> <code>?ticket delete</code></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>Need help? Contact us at <a href="mailto:primediscordbot@protonmail.com" style="color: white;">primediscordbot@protonmail.com</a></p>
+        <p>&copy; 2024 Prime Bot</p>
+    </footer>
+</body>
+</html>
